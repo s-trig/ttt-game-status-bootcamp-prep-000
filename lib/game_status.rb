@@ -18,6 +18,6 @@ end
 
 def full?(board)
   board.all? do |i|
-    i == "X" || i == "Y"
+    i == "X" || i == "O"
   end
 end
