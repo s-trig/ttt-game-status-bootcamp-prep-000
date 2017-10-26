@@ -21,3 +21,12 @@ def full?(board)
     i == "X" || i == "O"
   end
 end
+
+def draw(board) 
+  if !won?(board) && full?(board)
+    return true
+  elsif 
+    won?(board) || !full?(board)
+    return false
+  end
+end
