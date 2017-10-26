@@ -15,3 +15,9 @@ def won?(board)
   board[i[0]] == board[i[1]] && board[i[1]] == board[i[2]] && position_taken?(board, i[0])
   end
 end
+
+def full?(board)
+  board.select do |i|
+    if i == "X" || i == "Y"
+    end
+end
