@@ -17,7 +17,10 @@ def won?(board)
 end
 
 def full?(board)
-  board.all? do |i|
-    i == "X" || i == "O"
+  board.select do |i|
+    if i == "X" || i == "O"
+      return true
+    end
+    return false
   end
 end
