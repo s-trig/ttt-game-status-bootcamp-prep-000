@@ -10,12 +10,8 @@ WIN_COMBINATIONS = [
   [6,7,8], [2,5,8]
 ]
 
-def won(board)
-  WIN_COMBINATIONS.each do |i|
-  if ((board[i[0]] == "X" && board[i[1]] == "X" && board[i[2]] == "X") ||
-    (board[i[0]] == "O" && board[i[1]] == "O" && board[i[2]] == "O"))
-    return i
+def won?(board)
+  WIN_COMBINATIONS.detect do |i|
+  board[i0]] == board[i[1]] && board[i[1]] == board[i[2]] && position_taken?(board, win_index[0])
   end
-end
-return false
 end
