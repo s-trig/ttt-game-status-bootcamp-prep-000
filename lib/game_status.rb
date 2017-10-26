@@ -12,12 +12,10 @@ WIN_COMBINATIONS = [
 
 def won(board)
   WIN_COMBINATIONS.each do |i|
-    board.each do|j|
-      if position_taken(board, i) == board[j]
-        return true
-      else
-        return false
-      end
-    end
-end
+  if ((board[i[0]] == "X" && board[i[1]] == "X" && board[i[2]] == "X") ||
+    (board[i[0]] == "O" && board[i[1]] == "O" && board[i[2]] == "O"))
+    return i
+  end 
+end 
+return false
 end
