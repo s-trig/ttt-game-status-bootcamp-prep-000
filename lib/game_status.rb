@@ -19,6 +19,8 @@ end
 def full?(board)
   board.select do |i|
     if i == "X" || i == "Y"
+      return true
     end
   end
+  return false
 end
