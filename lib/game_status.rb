@@ -21,6 +21,6 @@ def full?(board)
     if i == "X" || i == "Y"
       return true
     end
+    return false
   end
-  return false
 end
