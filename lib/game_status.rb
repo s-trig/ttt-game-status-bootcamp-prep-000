@@ -14,7 +14,7 @@ def won(board)
   board.each do |i|
     if position_taken?(board, i) == WIN_COMBINATIONS[i]
       return true
-    else 
-      return false  
+    else
+      return false
   end
 end
